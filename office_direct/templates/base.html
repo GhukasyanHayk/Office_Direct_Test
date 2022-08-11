@@ -1,0 +1,244 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block content %}
+<main>
+    <div class="main_slides">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper ">
+                <div class="swiper-slide bg_slide ">
+                    <div class="swiper_slide_content _container">
+                        <h1> Кресла Samurai <br> на выгодных условиях <br> по всей стране </h1>
+                        <p>Здесь вам не придется покупать товар в слепую — <br> проведите тест-драйв перед покупкой</p>
+                        <button type="button">Запись на тест-драйв</button>
+                    </div>
+                </div>
+                <div class="swiper-slide bg_slide ">
+                    <div class="swiper_slide_content _container">
+                        <h1> Кресла Samurai <br> на выгодных условиях <br> по всей стране </h1>
+                        <p>Здесь вам не придется покупать товар в слепую — <br> проведите тест-драйв перед покупкой</p>
+                        <button type="button">Запись на тест-драйв</button>
+                    </div>
+                </div>
+                <div class="swiper-slide bg_slide ">
+                    <div class="swiper_slide_content _container">
+                        <h1> Кресла Samurai <br> на выгодных условиях <br> по всей стране </h1>
+                        <p>Здесь вам не придется покупать товар в слепую — <br> проведите тест-драйв перед покупкой</p>
+                        <button type="button">Запись на тест-драйв</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <div class="main_icons _container">
+        <div class="main_icon">
+            <img src="{% static 'images/trolley.png' %}" alt="">
+            <p><span>Бесплатная доставка</span> по Москве <br> и Санкт-Петербургу — от 3 шт.</p>
+        </div>
+        <div class="main_icon">
+            <img src="{% static 'images/chess.png' %}">
+            <p><span> Индивидуальные скидки </span> <br> при заказе от 3 шт.</p>
+        </div>
+        <div class="main_icon">
+            <img src="{% static 'images/discount.png' %}">
+            <p>Для юридических лиц <br> действуют <span>особые условия </span></p>
+        </div>
+    </div>
+
+    <div class="main_catalog _container">
+        <h1>Каталог кресел</h1>
+        <div class="ctalog_items">
+            <div class="catalog_item">
+                <img src="{% static 'images/kreslo1.png' %}" alt="">
+                <h5>Samurai KL-1.04 Темно- <br> коричневый</h5>
+                <h2>23 000 ₽</h2>
+                <button type="button">Запись на тест-драйв</button>
+            </div>
+            <div class="catalog_item">
+                <img src="{% static 'images/kreslo2.png' %}" alt="">
+                <h5>Samurai KL-1.04 Темно-<br>коричневый</h5>
+                <h2>23 000 ₽</h2>
+                <button type="button">Запись на тест-драйв</button>
+            </div>
+            <div class="catalog_item">
+                <img src="{% static 'images/kreslo1.png' %}" alt="">
+                <h5>Samurai KL-1.04 Темно-<br>коричневый</h5>
+                <h2>23 000 ₽</h2>
+                <button type="button">Запись на тест-драйв</button>
+            </div>
+            <div class="catalog_item">
+                <img src="{% static 'images/kreslo2.png' %}" alt="">
+                <h5>Samurai KL-1.04 Темно-<br>коричневый</h5>
+                <h2>23 000 ₽</h2>
+                <button type="button">Запись на тест-драйв</button>
+            </div>
+            <div class="catalog_item">
+                <img src="{% static 'images/kreslo1.png' %}" alt="">
+                <h5>Samurai KL-1.04 Темно-<br>коричневый</h5>
+                <h2>23 000 ₽</h2>
+                <button type="button">Запись на тест-драйв</button>
+            </div>
+            <div class="catalog_item">
+                <img src="{% static 'images/kreslo2.png' %}" alt="">
+                <h5>Samurai KL-1.04 Темно-<br>коричневый</h5>
+                <h2>23 000 ₽</h2>
+                <button type="button">Запись на тест-драйв</button>
+            </div>
+            <div class="catalog_item">
+                <img src="{% static 'images/kreslo1.png' %}" alt="">
+                <h5>Samurai KL-1.04 Темно-<br>коричневый</h5>
+                <h2>23 000 ₽</h2>
+                <button type="button">Запись на тест-драйв</button>
+            </div>
+            <div class="catalog_item">
+                <img src="{% static 'images/kreslo2.png' %}" alt="">
+                <h5>Samurai KL-1.04 Темно-<br>коричневый</h5>
+                <h2>23 000 ₽</h2>
+                <button type="button">Запись на тест-драйв</button>
+            </div>
+        </div>
+
+        <button id="add_more" type="button">Показать все</button>
+    </div>
+
+    <div class="main_osob">
+        <h2 class=" _container">Особенности кресел Самурай</h2>
+        <h4 class=" _container">Здесь будет более подробно развернуто ключевое преимущество.
+            Четвертое поколение Samurai, <br> выпускаемое с сентября
+            2020 года. Исправлены десятки недочетов предыдущих поколений</h4>
+        <div class="main_osob_content _container  ">
+            <div class="main_left">
+                <div class="main_left_item">
+                    <h3>Индивидуальные настройки</h3>
+                    <p>Учитывая ключевые сценарии поведения,
+                        высокое качество позиционных исследований
+                        способствует повышению</p>
+                </div>
+                <div class="main_left_item">
+                    <h3>Индивидуальные настройки</h3>
+                    <p>Учитывая ключевые сценарии поведения,
+                        высокое качество позиционных исследований
+                        способствует повышению</p>
+                </div>
+                <div class="main_left_item">
+                    <h3>Индивидуальные настройки</h3>
+                    <p>Учитывая ключевые сценарии поведения,
+                        высокое качество позиционных исследований
+                        способствует повышению</p>
+                </div>
+                <div class="main_left_item">
+                    <h3>Индивидуальные настройки</h3>
+                    <p>Учитывая ключевые сценарии поведения,
+                        высокое качество позиционных исследований
+                        способствует повышению</p>
+                </div>
+            </div>
+            <img src="{% static 'images/kreslo osob.png' %}" alt="">
+
+            <div class="main_right">
+                <h3>Индивидуальные настройки</h3>
+                <p>Учитывая ключевые сценарии поведения,
+                    высокое качество позиционных исследований
+                    способствует повышению</p>
+
+                <h3>Индивидуальные настройки</h3>
+                <p>Учитывая ключевые сценарии поведения,
+                    высокое качество позиционных исследований
+                    способствует повышению</p>
+
+                <h3>Индивидуальные настройки</h3>
+                <p>Учитывая ключевые сценарии поведения,
+                    высокое качество позиционных исследований
+                    способствует повышению</p>
+
+                <h3>Индивидуальные настройки</h3>
+                <p>Учитывая ключевые сценарии поведения,
+                    высокое качество позиционных исследований
+                    способствует повышению</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_our_clients _container">
+        <h2>Наши клиенты</h2>
+        <div class="main_our_client">
+            <img src="{% static 'images/pid.png' %}" alt="">
+            <img src="{% static 'images/nornikel.png' %}" alt="">
+            <img src="{% static 'images/bashneft.png' %}" alt="">
+            <img src="{% static 'images/pocmoc.png' %}" alt="">
+            <img src="{% static 'images/home credit.' %}png" alt="">
+            <img src="{% static 'images/pobeda.png' %}" alt="">
+        </div>
+    </div>
+
+    <div class="main_rewievs _container">
+        <h2>Отзывы</h2>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide rew ">
+                    <div class="rewiew_child  ">
+                        <div class="rewiew_child_name">
+                            <img src="{% static 'images/rewiew.png' %}" alt="">
+                            <h3> Наталья, Москва</h3>
+                        </div>
+                        <p>С другой стороны выбранный нами инновационный
+                            путь создаёт предпосылки качественно новых
+                            шагов для всесторонне сбалансированных нововведений.
+                            С другой стороны повышение уровня гражданского...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide rew ">
+                    <div class="rewiew_child  ">
+                        <div class="rewiew_child_name">
+                            <img src="{% static 'images/rewiew.png' %}" alt="">
+                            <h3> Наталья, Москва</h3>
+                        </div>
+                        <p>С другой стороны выбранный нами инновационный
+                            путь создаёт предпосылки качественно новых
+                            шагов для всесторонне сбалансированных нововведений.
+                            С другой стороны повышение уровня гражданского...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide rew ">
+                    <div class="rewiew_child   ">
+                        <div class="rewiew_child_name">
+                            <img src="{% static 'images/rewiew.png' %}" alt="">
+                            <h3> Наталья, Москва</h3>
+                        </div>
+                        <p>С другой стороны выбранный нами инновационный
+                            путь создаёт предпосылки качественно новых
+                            шагов для всесторонне сбалансированных нововведений.
+                            С другой стороны повышение уровня гражданского...</p>
+                    </div>
+                </div>
+                <div class="swiper-slide rew ">
+                    <div class="rewiew_child ">
+                        <div class="rewiew_child_name">
+                            <img src="{% static 'images/rewiew.png' %}" alt="">
+                            <h3> Наталья, Москва</h3>
+                        </div>
+                        <p>С другой стороны выбранный нами инновационный
+                            путь создаёт предпосылки качественно новых
+                            шагов для всесторонне сбалансированных нововведений.
+                            С другой стороны повышение уровня гражданского...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <div class="main_map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5848.508298798211!2d74.5708881!3d42.8674796!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1648385627454!5m2!1sru!2s"
+                width="1720" height="450" style="border:0;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</main>
+{% endblock %}

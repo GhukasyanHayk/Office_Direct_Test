@@ -1,0 +1,92 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+{% block title %} <title>About</title> {% endblock %}
+
+<main>
+    <div class="defends _container">
+        <h2>Ваш верный рыцарь, <br> защита и опора</h2>
+        <h4>Samurai — так называется серия офисных кресел производства российской компании Метта, ничем не уступающих
+            лучшим мировым образцам. Даже тех, кто с
+            ними уже знаком, кресла Самурай не престают удивлять:</h4>
+        <div class="icons">
+            <div class="icon">
+                <img src="{% static 'images/ptichka.png' %}" alt="">
+                <p>Cложные анатомически совершенные формы спинки и сиденья.</p>
+            </div>
+            <div class="icon">
+                <img src="{% static 'images/ptichka.png' %}" alt="">
+                <p>Cовременные типы обивки — модифицированная натуральная кожа и полупрозрачная карбоновая сетка;</p>
+            </div>
+            <div class="icon">
+                <img src="{% static 'images/ptichka.png' %}" alt="">
+                <p>Сгромный выбор — от экономичных моделей для самых бюджетных проектов до кресел с самым высшим уровнем
+                    эргономики;</p>
+            </div>
+            <div class="icon">
+                <img src="{% static 'images/ptichka.png' %}" alt="">
+                <p>Непривычное для российского производителя высокое качество изготовления;</p>
+            </div>
+            <div class="icon">
+                <img src="{% static 'images/ptichka.png' %}" alt="">
+                <p>Cамобытный запоминающийся дизайн;</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="conveniences">
+        <div class="conveniences_text _container">
+            <h2>Индивидуальные удобства</h2>
+            <h4>Отдельного внимания заслуживает множество эргономических опций и регулировок, которые в определенных
+                сочетаниях устанавливаются на разные модели кресел:</h4>
+            <div class="texts">
+                <div class="text">
+                    <img src="{% static 'images/green ptichka.png' %}" alt="">
+                    <p>механизм качания с синхронным отклонением спинки и сиденья на
+                        разные углы и смещенной вперед осью наклона сиденья;</p>
+                </div>
+                <div class="text">
+                    <img src="{% static 'images/green ptichka.png' %}" alt="">
+                    <p> регулировка величины и положения поясничного изгиба;</p>
+                </div>
+                <div class="text">
+                    <img src="{% static 'images/green ptichka.png' %}" alt="">
+                    <p> регулировка глубины сиденья;;</p>
+                </div>
+                <div class="text">
+                    <img src="{% static 'images/green ptichka.png' %}" alt="">
+                    <p>регулировка высоты подлокотников и расположения на них верхних подушек;</p>
+                </div>
+                <div class="text">
+                    <img src="{% static 'images/green ptichka.png' %}" alt="">
+                    <p>регулировка высоты и наклона подголовника;</p>
+                </div>
+                <div class="text">
+                    <img src="{% static 'images/green ptichka.png' %}" alt="">
+                    <p>регулировка расстояния между подлокотниками;</p>
+                </div>
+                <div class="text">
+                    <img src="{% static 'images/green ptichka.png' %}" alt="">
+                    <p>регулировка уровня жесткости сиденья;</p>
+                </div>
+                <div class="text">
+                    <img src="{% static 'images/green ptichka.png' %}" alt="">
+                    <p>регулировка нагрузки механизма качания и
+                        фиксация положения спинки и сиденья в 5 положениях.</p>
+                </div>
+            </div>
+        </div>
+        <div class="images _container">
+            <img src="{% static 'images/kreslo.png' %}" alt="">
+        </div>
+
+    </div>
+    <div class="main_map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5848.508298798211!2d74.5708881!3d42.8674796!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1648385627454!5m2!1sru!2s"
+                width="1720" height="450" style="border:0;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</main>
+
+<script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

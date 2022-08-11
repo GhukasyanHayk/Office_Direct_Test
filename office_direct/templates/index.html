@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %} <title>Document</title> {% endblock %}
+</head>
+
+<body>
+    <header class="_container">
+        <div class="header_first">
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
+            <img id="logo" class="logo" src="{% static 'images/Лого.png' %}" alt="">
+            <input type="text" name="" id="Main_search" placeholder="Название модели или артикул">
+            <p>+7 495 221-06-75</p>
+            <button id="Main_button" type="button">Заказать звонок</button>
+            <img class="magazin" src="{% static 'images/magazin.png' %}" alt="">
+        </div>
+        <div class="header_nav">
+            <button id="catalog_btn" type="button">
+                <img src="{% static 'images/catalog.png' %}" alt="">
+                Каталог
+            </button>
+
+            <nav class="menu">
+                <ul>
+                    <img  class="logo" src="{% static 'images/Лого.png' %}" alt="">
+                    <li><a href="{% url 'about'  %}">О продукте</a></li>
+                    <li><a href="{% static '../rewiews/index.html' %}">Отзывы</a></li>
+                    <li><a href="{% static '../corzina/index.html' %}">Доставка и оплата</a></li>
+                    <li><a href="{% static '../contacts/index.html' %}">Контакты</a></li>
+                    <li ><a href="{% static '../catalog/index.html' %}">Каталог</a></li>
+                    <li><p>+7 495 221-06-75</p></li>
+                </ul>
+
+            </nav>
+            <div class="magaz">
+                <img src="{% static 'images/magazin.png' %}" alt="">
+                <p>Моя корзина</p>
+            </div>
+        </div>
+    </header>
+{% block content %}{% endblock %}
+    <footer>
+        <div class="first">
+            <img src="{% static 'images/footerlogo.png' %}" alt="">
+            <h4>Политика конфиденциальности</h4>
+            <h4>© 2021 Все права защищены</h4>
+        </div>
+        <div class="second">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'about'  %}">О продукте</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="third">
+            <div class="icon">
+                <img src="{% static 'images/phoneicon.png' %}" alt="">
+                <p>+7 495 221-06-75</p>
+            </div>
+            <div class="icon">
+                <img src="{% static 'images/mailicon.png' %}" alt="">
+                <p>zakaz@kresla-samurai.ru</p>
+            </div>
+            <div class="icon">
+                <img src="{% static 'images/geolocate.png' %}" alt="">
+                <p>ул. Красного курсанта д.25, лит.в, оф. 114, бизнес-центр "RED CADET"</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
